@@ -109,8 +109,9 @@ public class FilmeController {
     	Optional<DetalhesDoFilme> detalhesDoFilme = client.request(filme);
     	
     	
-    	modelAndView.addObject("sessoes", sessoes);
     	modelAndView.addObject("detalhes", detalhesDoFilme.orElse(new DetalhesDoFilme()));
+    	modelAndView.addObject("sessoes", sessoes);
+    	
     	
     	return modelAndView;
     }
