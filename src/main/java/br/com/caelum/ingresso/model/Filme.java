@@ -23,7 +23,19 @@ public class Filme {
     
     
     
-    /**
+    public BigDecimal getPreco() {
+		return preco;
+	}
+
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
+
+	public void setDuracao(Duration duracao) {
+		this.duracao = duracao;
+	}
+
+	/**
      * @deprecated hibernate only
      */
     public Filme() {
